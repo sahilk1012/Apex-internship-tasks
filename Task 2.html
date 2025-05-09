@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Skills Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Web Skills Practice</h1>
+  </header>
+
+  <section class="form-section">
+    <h2>Contact Form</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <section class="todo-section">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="New Task" />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
