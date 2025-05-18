@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">ApexPlanet</div>
+    <ul class="nav-links">
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#joke">Joke Generator</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Advanced Styling and JavaScript</h1>
+      <p>Interactive and Responsive Mini Projects</p>
+    </div>
+    <div class="hero-image">
+      <img src="https://thumbs.dreamstime.com/b/college-girl-studying-concentration-class-high-school-student-taking-notes-book-her-study-young-woman-sitting-198492841.jpg" alt="Learning illustration" />
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <main>
+    <!-- Quiz Section -->
+    <section class="section quiz-section" id="quiz">
+      <h2>JavaScript Quiz</h2>
+      <div class="quiz-box">
+        <p id="question">Loading question...</p>
+        <div class="btn-group">
+          <button onclick="submitAnswer(true)">True</button>
+          <button onclick="submitAnswer(false)">False</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Joke Section -->
+    <section class="section joke-section" id="joke">
+  <h2>Random Joke Generator</h2>
+  <div class="joke-box">
+    <button onclick="getJoke()">Generate Joke</button>
+    <div id="joke-container"></div> <!-- Jokes will be appended here -->
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>ApexPlanet</h3>
+      <p>Crafting modern web experiences with style and interactivity.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Quiz</a></li>
+        <li><a href="#">Jokes</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Contact</h4>
+      <p>Email: info@apexplanet.com</p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 ApexPlanet | Designed with ❤️ by Sp Verma</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
